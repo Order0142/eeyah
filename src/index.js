@@ -2,10 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import ConnectDconnect from "./pages/ConnectDconnect";
-import FAQ from "./pages/FAQ";
+import Docs from "./pages/Docs";
+import Help from "./pages/Help";
+import Landings from "./pages/Landings";
+import Login from "./pages/Login";
+import Pages from "./pages/Pages";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -16,11 +17,11 @@ const Ade = () => {
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="connect" element={<ConnectDconnect />} />
-          <Route path="faq" element={<FAQ />} />
-          <Route path="about" element={<FAQ />} />
+          <Route path="docs" element={<Docs />} />
+          <Route path="help" element={<Help />} />
+          <Route path="landings" element={<Landings />} />
+          <Route path="login" element={<Login />} />
+          <Route path="pages" element={<Pages />} />
         </Route>
       </Routes>
     </BrowserRouter>
