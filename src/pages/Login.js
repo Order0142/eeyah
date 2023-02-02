@@ -3,7 +3,7 @@ import Header from "../components/Header";
 const Login = () => {
   return (
     <>
-      <Header ColorFill={"black"} />
+      <Header ColorFill={"black"} colors={'black'} />
       <div>Login</div>
     </>
   );

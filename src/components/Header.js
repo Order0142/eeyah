@@ -1,11 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom";
-const Header = ({ ColorFill }) => {
+import React, { useState } from "react";
+import NavLinks from "./NavLinks";
+const Header = ({ ColorFill, colors }) => {
+  const [showNav, setShowNav] = useState(false);
 
-  
+  const showNavigation = (e) => {
+    e.stopPropagation();
+    setShowNav(!showNav);
+  };
   return (
     <header className="header">
-      <Link to={"/"}>
+      <NavLinks to={"/"}>
         <svg
           width="78"
           height="24"
@@ -26,16 +30,28 @@ const Header = ({ ColorFill }) => {
             fill="#005490"
           />
         </svg>
-      </Link>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/landings">Landings</Link>
-        <Link to="/pages">Pages</Link>
-        <Link to="/docs">Docs</Link>
-        <Link to="/help">Help</Link>
-        <Link to="/login">Login</Link>
+      </NavLinks>
+      <nav className={`${showNav ? "" : "none"} flex_c navLinks`}>
+        <NavLinks to="/" colors={colors}>
+          Home
+        </NavLinks>
+        <NavLinks to="/landings" colors={colors}>
+          Landings
+        </NavLinks>
+        <NavLinks to="/pages" colors={colors}>
+          Pages
+        </NavLinks>
+        <NavLinks to="/docs" colors={colors}>
+          Docs
+        </NavLinks>
+        <NavLinks to="/help" colors={colors}>
+          Help
+        </NavLinks>
+        <NavLinks to="/login" colors={colors}>
+          Login
+        </NavLinks>
       </nav>
-      <span>
+      <span className="icon" onClick={showNavigation}>
         <svg
           class="bar"
           width="24"
