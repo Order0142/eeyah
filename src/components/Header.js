@@ -53,12 +53,12 @@ const Header = ({ ColorFill, colors }) => {
       </nav>
       <span className="icon" onClick={showNavigation}>
         <svg
-          class="bar"
           width="24"
           height="24"
           xmlns="http://www.w3.org/2000/svg"
           fill-rule="evenodd"
           clip-rule="evenodd"
+          className={`${!showNav ? "" : "none"} bar`}
         >
           <path
             d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z"
@@ -68,6 +68,20 @@ const Header = ({ ColorFill, colors }) => {
           ></path>
           <path d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z"></path>
         </svg>
+        <svg
+            className={`${showNav ? "" : "none"}`}
+            width='24'
+            height='24'
+            xmlns='http://www.w3.org/2000/svg'
+            fillRule='evenodd'
+            clipRule='evenodd'
+          >
+            <path
+              d='M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z'
+              stroke='black'
+              strokeWidth='1.5'
+            />
+          </svg>
       </span>
     </header>
   );

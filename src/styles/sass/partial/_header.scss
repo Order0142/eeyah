@@ -24,7 +24,7 @@ header {
       top: 0;
       padding: $headerHeight 0;
       width: 75%;
-      background-color: $white;
+      background: linear-gradient(216.04deg, #27C0EF 13.84%, #00A8DB 83.53%) ;
       @include media {
         max-width: 80%;
       }
