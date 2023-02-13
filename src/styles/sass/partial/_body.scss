@@ -13,13 +13,14 @@ section {
   }
 
   &#hero {
+    position: relative;
     div {
       padding-top: $headerHeight;
       width: 100%;
-
       @include media {
-        padding-top: 1.5 * $headerHeight;
+        padding-top: 0 * $headerHeight;
         max-width: 45%;
+        align-self: flex-start;
       }
     }
 
@@ -30,16 +31,22 @@ section {
       clip-path: polygon(0% 0%, 100% 1%, 100% 100%, 0% 100%);
 
       @include media {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 20.8%;
+  /*       margin: 0 0 -20vw 3em;
         transform: scale(1.1);
-        min-width: 53.8%;
-        width: 53.8%;
         transform: translate(3.125%, 0) scale(1.1);
-        align-self: flex-end;
+        align-self: flex-end; */
       }
     }
 
     @include media {
       flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding-top: 1.5 * $headerHeight;
     }
   }
 
