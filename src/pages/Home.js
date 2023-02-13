@@ -4,16 +4,12 @@ import { Link } from "react-router-dom";
 import Images from "../images/Images";
 const Home = () => {
   return (
-    <>
-      <Header ColorFill={"white"} colors="white" />
       <main>
+        <Header ColorFill={"white"} colors="white" />
         <section className={"section"} id={"hero"}>
           <div>
             <h2>
-              We help you grow your business{" "}
-              <span>
-                <b>faster</b> <img src={""} alt={""} />
-              </span>
+              We help you grow your business <span>faster</span>
             </h2>
             <p>
               Ehya is the Instagram analytics platform teams use to stay focused
@@ -28,10 +24,9 @@ const Home = () => {
               </Link>
             </span>
           </div>
-          <img src={Images.HeroImg} alt={'heroImg'} />
+          <img src={Images.HeroImg} alt={"heroImg"} />
         </section>
       </main>
-    </>
   );
 };
 
