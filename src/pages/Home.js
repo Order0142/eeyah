@@ -4,7 +4,9 @@ const Home = () => {
   return (
   <>
   <Header ColorFill={'white'} colors='white'/>
-    <div>Home</div>
+    <main>
+<section className={'section'} id={'hero'} ></section>
+    </main>
     <button>Ade</button>
   </>
   )
