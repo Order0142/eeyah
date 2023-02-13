@@ -13,7 +13,6 @@ section {
   }
 
   &#hero {
-
     div {
       padding-top: $headerHeight;
       width: 100%;
@@ -32,25 +31,15 @@ section {
 
       @include media {
         transform: scale(1.1);
-
-        &:last-child {
-          display: none;
-        }
-
         min-width: 53.8%;
         width: 53.8%;
         transform: translate(3.125%, 0) scale(1.1);
+        align-self: flex-end;
       }
     }
 
     @include media {
       flex-direction: row;
-      background: {
-        image: url('../../../images/circleBackground.svg'), $commonBGcolor;
-        repeat: no-repeat, no-repeat;
-        position: 150% 100%, center;
-        size: 75% 75%, cover;
-      }
     }
   }
 

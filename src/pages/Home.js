@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <main>
       <Header ColorFill={"white"} colors="white" />
-      <section className={"section"} id={"hero"}>
+      <section className={"section flex_c"} id={"hero"}>
         <div>
           <h2>
             We help you grow your business <span>faster</span>

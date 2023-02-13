@@ -1,5 +1,5 @@
 import Logo from './Logo.svg'
-import HeroImg from './heroImg.svg'
+import HeroImg from './heroImg.png'
 const Images = {
 Logo,
 HeroImg
