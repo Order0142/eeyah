@@ -9,7 +9,7 @@ const Home = () => {
       <section className={"section flex_c"} id={"hero"}>
         <div>
           <h2>
-            We help you grow your business <span>faster</span>
+            We help you grow your business <b>faster</b>
           </h2>
           <p>
             Ehya is the Instagram analytics platform teams use to stay focused
