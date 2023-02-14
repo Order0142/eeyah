@@ -9,17 +9,17 @@ const Home = () => {
       <section className={"section flex_c"} id={"hero"}>
         <div>
           <h2>
-            We help you grow your business <b>faster</b>
+            We help you grow your business <b>faster <img src={Images.BorderImg} alt="borderimg"/></b>
           </h2>
           <p>
             Ehya is the Instagram analytics platform teams use to stay focused
             on the goals, track engagement for report your business .
           </p>
-          <span>
-            <Link to={"/how"} className="linkBtn">
+          <span className="flex_cr">
+            <Link to={"/how"} className="linkButton Bgwhite">
               See how it works
             </Link>
-            <Link to={"/how"} className="">
+            <Link to={"/how"} className="white">
               Get a free demo →{" "}
             </Link>
           </span>

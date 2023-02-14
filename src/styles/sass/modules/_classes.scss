@@ -29,7 +29,7 @@
   }
 }
 .linkButton {
-  color: #fff;
+  color: $lightBlue;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -39,21 +39,23 @@
   max-height: 70px;
   height: 4 * $paddingHeight;
   border-radius: $borderRadius;
-  border: 2px solid $black;
+  border: 2px solid $white;
   white-space: nowrap;
   vertical-align: middle;
   transition: all 0.3s ease-in-out;
   font-size: $defaultFontSize;
   margin: 2 * $paddingHeight 0;
+  font-weight: 500;
+  background-color: $white;
   &:hover{
-    background-color: white;
+    background-color: $lightBlue;
+    color: $white;
   }
   @include media {
-    margin: 4 * $paddingHeight 0;
     width: 24vw;
   }
   @include media($laptop) {
-    width: 18vw;
+    width: 15vw;
   }
   //further classify buttons based on width and Color
 }

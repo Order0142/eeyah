@@ -14,7 +14,7 @@ main {
     }
 
     &#hero {
-      position: relative;
+      justify-content: space-between;
 
       div {
 
@@ -24,19 +24,20 @@ main {
           color: $white;
         }
 
-        b::after {
-  /*         border: 10px solid transparent;
-          border-image: url('#{$path}/borderImg.svg') 100% round;
-          border-top: 0;
-          border-left: 0;
-          border-width: 0 30px 50px 0;
-         /*  
-          border-right: 0; */
-          content:"";
-    height:20px; 
-    width:100%; /* or i.e: 500px */
-    background:url("http://lorempixel.com/g/400/100/?example.jpg");
-          
+        b {
+          position: relative;
+        }
+
+        b img {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -2vh;
+          width: 8vw;
+        }
+
+        span {
+          justify-content: space-between;
         }
 
         color:$white;
@@ -45,7 +46,7 @@ main {
 
         @include media {
           padding-top: 0 * $headerHeight;
-          max-width: 45%;
+          max-width: 40%;
           align-self: flex-start;
         }
       }
@@ -57,22 +58,19 @@ main {
         clip-path: polygon(0% 0%, 100% 1%, 100% 100%, 0% 100%);
 
         @include media {
-          position: absolute;
-          right: 0;
-          bottom: 0;
-          width: 20.8%;
-          /*       margin: 0 0 -20vw 3em;
-        transform: scale(1.1);
-        transform: translate(3.125%, 0) scale(1.1);
-        align-self: flex-end; */
+          display: none;
         }
       }
 
       @include media {
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
         justify-content: flex-start;
         padding-top: 1.5 * $headerHeight;
+        height: 100vh;
+        background: url('#{$path}/heroImg.png') no-repeat;
+        background-position: 100% 50%;
+        background-size: 520px;
       }
     }
 
