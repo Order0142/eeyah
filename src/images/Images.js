@@ -1,7 +1,9 @@
 import Logo from './Logo.svg'
-import HeroImg from './heroImg.svg'
+import HeroImg from './heroImg.png'
+import BorderImg from './borderImg.svg'
 const Images = {
 Logo,
-HeroImg
+HeroImg,
+BorderImg,
 }
 export default Images;
