@@ -12,33 +12,29 @@ section {
     height: 100%;
   }
 
-  &#hero {
-    position: relative;
-    div {
-      padding-top: $headerHeight;
-      width: 100%;
-      @include media {
-        padding-top: 0 * $headerHeight;
-        max-width: 45%;
-        align-self: flex-start;
-      }
-    }
+    &#hero {
+      justify-content: space-between;
 
-    img {
-      width: 100%;
-      transform: scale(1.15);
-      animation-duration: 4s;
-      clip-path: polygon(0% 0%, 100% 1%, 100% 100%, 0% 100%);
+<<<<<<<<< Temporary merge branch 1
+      div {
 
+        h2,
+        p,
+        b {
+          color: $white;
+        }
+=========
       @include media {
         position: absolute;
         right: 0;
         bottom: 0;
-        width: 20.8%;
-  /*       margin: 0 0 -20vw 3em;
+        width: 25.8%;
+        margin: 0 0 -5vw 0em;
         transform: scale(1.1);
         transform: translate(3.125%, 0) scale(1.1);
-        align-self: flex-end; */
+        align-self: flex-end;
+        padding-right: 3vw;
+
       }
     }
 
@@ -48,7 +44,59 @@ section {
       justify-content: flex-start;
       padding-top: 1.5 * $headerHeight;
     }
+    
   }
+>>>>>>>>> Temporary merge branch 2
+
+        b {
+          position: relative;
+        }
+
+        b img {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -2vh;
+          width: 8vw;
+        }
+
+        span {
+          justify-content: space-between;
+        }
+
+        color:$white;
+        padding-top: $headerHeight;
+        width: 100%;
+
+        @include media {
+          padding-top: 0 * $headerHeight;
+          max-width: 40%;
+          align-self: flex-start;
+        }
+      }
+
+      img {
+        width: 100%;
+        transform: scale(1.15);
+        animation-duration: 4s;
+        clip-path: polygon(0% 0%, 100% 1%, 100% 100%, 0% 100%);
+
+        @include media {
+          display: none;
+        }
+      }
+
+      @include media {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 1.5 * $headerHeight;
+        height: 100vh;
+        background: url('#{$path}/heroImg.png') no-repeat;
+        background-position: 100% 50%;
+        background-size: 520px;
+      }
+    }
 
   &#acad {
     >div {

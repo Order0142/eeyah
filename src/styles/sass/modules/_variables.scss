@@ -4,8 +4,9 @@ $contentPadding: $paddingHeight $paddingSide;
 $defaultBackgroundColor: #FFF;
 $commonBGcolor: linear-gradient(216.04deg, #27C0EF 13.84%, #00A8DB 83.53%);
 $black:#150C21;
+$altblack: #90A3B4;
 $white:#fff;
-$lightBlue: #47D0F2;
+$lightBlue: #00A8DB; 
 $Blue:#0138E6;
 $deepBlue:#1207AB;
 $purple: #5D5FEF;
@@ -18,8 +19,10 @@ $footerColor:#A4A4A4;
 $anchorMargin: 1.5vw;
 $smallMargin: 0.5vw;
 $smallpadding: 4px;
-$borderRadius:10px;
+$borderRadius:5px;
 // MEDIA QUERIES
 $android: "540px";
 $tablet: "768px";
 $laptop: "1024px";
+
+$path: '../../../images/'
