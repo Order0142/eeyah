@@ -75,7 +75,23 @@ main {
     }
 
     &#acad {
+      background-color: $white;
+
       >div {
+        &.flex_cr {
+          justify-content: space-between;
+          width: 100%;
+          img {
+            width: 80%;
+          }
+          span{
+            @include media {
+             margin-left: 3em;
+            }
+          }
+
+
+        }
 
         &.tablet,
         &.flex_r {

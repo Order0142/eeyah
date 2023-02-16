@@ -29,13 +29,27 @@ const Home = () => {
         </div>
         <img src={Images.HeroImg} alt={"heroImg"} />
       </section>
-      <section className="section" id="acad">
+      <section className="section flex_c" id="acad">
         <div class="flex_r affiliates wow animate__animated animate__slideInUp">
-          <img src="/assets/img/ibm.svg" alt="" />
-          <img src="/assets/img/microsoft.svg" alt="" />
-          <img src="/assets/img/java.svg" alt="" />
-          <img src="/assets/img/python.svg" alt="" />
-          <img src="/assets/img/google.svg" alt="" />
+          <img src={Images.Slack} alt="" />
+          <img src={Images.Netflix} alt="" />
+          <img src={Images.Google} alt="" />
+          <img src={Images.Airbnb} alt="" />
+          <img src={Images.Uber} alt="" />
+        </div>
+        <div className="flex_cr">
+          <img src={Images.Iphone12} alt={"iphone"} />
+          <span>
+            <h3 className="h3Color">Measure Impressions and Reach Post</h3>
+            <p>
+              Graphs displaying your performance for metrics like follower
+              evolution, average engagement rate per post and reach and
+              impressions to give you the insights.
+            </p>
+            <Link to={"/how"} className="blue">
+              Learn about graphs →{" "}
+            </Link>
+          </span>
         </div>
       </section>
     </main>
