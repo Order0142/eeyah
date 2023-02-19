@@ -52,6 +52,19 @@ const Home = () => {
           </span>
         </div>
       </section>
+      <section className="section" id="acad">
+        <div>
+          <h3>Schedule Your Post Whenever You Want</h3>
+          <p>Publish your content automatically to ensure that your content 
+            reaches the right people. Built-in features such as</p>
+          <ul>
+          <li>
+          <img src={Images.Tick} alt="" />
+          <p>Best time to Post</p>
+          </li>
+          </ul>
+        </div>
+      </section>
     </main>
   );
 };

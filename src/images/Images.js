@@ -7,6 +7,7 @@ import Google from "./google.png";
 import Airbnb from "./airbnb.png";
 import BorderImg from "./borderImg.svg";
 import Iphone12 from "./iphone12.png";
+import Tick from "./tick.png"
 const Images = {
   Logo,
   HeroImg,
@@ -17,5 +18,6 @@ const Images = {
   Google,
   Uber,
   Iphone12,
+  Tick,
 };
 export default Images;
