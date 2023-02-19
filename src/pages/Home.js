@@ -52,17 +52,52 @@ const Home = () => {
           </span>
         </div>
       </section>
-      <section className="section" id="acad">
+      <section className="section flex" id="academy">
         <div>
           <h3>Schedule Your Post Whenever You Want</h3>
           <p>Publish your content automatically to ensure that your content 
             reaches the right people. Built-in features such as</p>
           <ul>
-          <li>
-          <img src={Images.Tick} alt="" />
-          <p>Best time to Post</p>
-          </li>
+          <li>Best time to Post</li>
+          <li>Geolocation</li>
+          <li>User Tag</li>
+          <li>Other Benefit</li>
           </ul>
+          <Link to={"/how"} className="blue">
+              Learn about scheduled post →{" "}
+            </Link>
+        </div>
+          <img src={Images.Macbook} alt="" />
+        
+      </section>
+      <section>
+        <div>
+          <h3>Track any hashtag(s) Performance</h3>
+          <p>Don’t waste time on search manual tasks. Let Automation do it for you. Simplify workflows, reduce errors, and save time.</p>
+        </div>
+        <div className="flex">
+          <span className="card">
+          <img src={Images.Hashtag} alt="" />
+          <h4>Hashtag Growth</h4>
+          <p>Follow a hashtag growth total posts, videos and images.</p>
+          </span>
+          <span className="card">
+          <img src={Images.Hashtag2} alt="" />
+          <h4>Influencers by Hashtag</h4>
+          <p>Identify the most influential people posting with your hashtag.</p>
+          </span>
+          <span>
+          <img src={Images.Hashtag3} alt="" />
+          <h4>Most Influental Post</h4>
+          <p>See the most influential posts on hashtag you
+          are following on.</p>
+          </span>
+          <span>
+          <img src={Images.Hashtag4} alt="" />
+          <h4>Hashtag Location</h4>
+          <p>Visualize where people are posting using your
+          hashtag made.</p>
+          </span>
         </div>
       </section>
     </main>

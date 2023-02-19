@@ -131,7 +131,7 @@ main {
 
           &.academy {
             img {
-              width: 24%;
+              width: 25%;
               //height: 320px;
               margin: 3 * $paddingHeight 1.5 * $smallMargin;
               object-fit: contain;
@@ -147,8 +147,10 @@ main {
                 box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
               }
 
-              @include media(1440px) {
-                //height: 55vh;
+              @include media {
+                img {
+                  width: 20%
+                }
               }
             }
           }
