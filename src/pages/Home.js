@@ -16,7 +16,7 @@ const Home = () => {
           </h2>
           <p>
             Ehya is the Instagram analytics platform teams use to stay focused
-            on the goals, track engagement for report your business .
+            on the goals, track engagements for report your business .
           </p>
           <span className="flex_cr">
             <Link to={"/how"} className="linkButton Bgwhite">
